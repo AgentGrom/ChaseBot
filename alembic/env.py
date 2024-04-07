@@ -6,7 +6,12 @@ from sqlalchemy import pool
 from alembic import context
 
 from src.config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
-from src.main.models import metadata
+from src.app.models import metadata
+
+import sys
+import os
+
+sys.path.append(os.path.join(sys.path[0], 'src'))
 
 
 # this is the Alembic Config object, which provides
