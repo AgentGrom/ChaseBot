@@ -1,3 +1,4 @@
 settings/
 venv/
 .env
+alembic/versions
